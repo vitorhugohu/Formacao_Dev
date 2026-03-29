@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Por Tag</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body id="exercicio">
+    <div id="primeiro">#primeiros</div>
+    <div id="segundo">segundo</div>
+    <div id="terceiro" class="destaque">#terceiro</div>
+    <div id="quarto">#quarto</div>
+    <div id="quinto">#quinto</div>
+
+    <script>
+        // HTMLCollection (não é um array!)
+        const divs = document.getElementsByTagName('div')
+        
+        // Loop #01
+        for(const elemento of divs) {
+            elemento.classList.add('destaque')
+        }
+
+        // Loop #02
+        const array1 = Array.from(divs)
+        array1.forEach((el, i) => {
+            if(i % 2 === 1) {
+                el.classList.remove('destaque')
+            }
+        })
+
+        // Loop #03
+        const array = [...divs]
+        array.forEach((el, i) => {
+            const ultimo = array.length - 1 === i
+            if(ultimo) {
+
+            }
+        })
+    </script>
+</body>
+</html>

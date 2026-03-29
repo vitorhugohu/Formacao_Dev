@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos #03</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body id="exercicio">
+    <main class="coluna">
+        <label for="compras">Compras</label>
+        <ul id="compras" destino="escritorio" data-urgencia="5">
+            <li>Café</li>
+            <li>Água</li>
+            <li>Copo descartavel</li>
+        </ul>
+    </main>
+    
+    <script>
+       const lista = document.querySelector('#compras')
+
+       // somente leitura
+       console.log(lista.attributes)
+       console.log(lista.attributes[0])
+       console.log(lista.attributes.id)
+       console.log(lista.attributes.destino)
+       console.log(lista.attributes[2])
+       console.log(lista.attributes['data-urgencia'])
+    </script>
+</body>
+</html>

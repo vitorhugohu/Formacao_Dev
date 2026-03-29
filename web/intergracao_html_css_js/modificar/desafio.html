@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body id="exercicio">
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Nota</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script>
+       const alunos = [
+        { nome: 'Ana', nota: 8.1 },
+        { nome: 'Bia', nota: 9.3 },
+        { nome: 'Carlos', nota: 7.7 },
+        { nome: 'Daniel', nota: 8.9 },
+        { nome: 'Julia', nota: 8.5 },
+       ]
+
+       const tbody = document.querySelector('tbody')
+
+       alunos.forEach(aluno => {
+        const colunaNome = document.createElement('td')
+        colunaNome.innerHTML = aluno.nome
+
+        const colunaNota = document.createElement('td')
+        colunaNota.innerHTML = aluno.nota
+
+        const linha = document.createElement('tr')
+        linha.appendChild(colunaNome)
+        linha.appendChild(colunaNota)
+
+        tbody.appendChild(linha)
+       })
+    </script>
+</body>
+</html>

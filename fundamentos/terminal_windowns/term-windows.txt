@@ -1,0 +1,21 @@
+cd   -> mudar de diretório
+
+cd .. -> volta para a pasta anterior
+
+Crtl + L -> limpa o terminal
+
+cd /? -> Ver documentação de como funcionar um determinado comando
+
+dir / ls ´> lista todo o diretório daquela pasta que estou
+
+mkdir + nome da pasta -> cria uma pasta no meu diretório
+
+cat + nome do arquivo -> diz o conteúdo de um arquivo
+
+node -> executar código JS
+
+npm init -y -> criar o package.json
+
+npm i + nome -> instalar uma dependência do node
+
+ni arquivo.txt -> cria arquivo (PowerShell)

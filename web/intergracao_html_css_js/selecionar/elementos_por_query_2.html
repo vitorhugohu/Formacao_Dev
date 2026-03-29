@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos por Query #02</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body id="exercicio">
+    <div id="primeiro">#primeiros</div>
+    <div id="segundo" class="destaque" destaque="1">segundo</div>
+    <div id="terceiro" metade>#terceiro</div>
+    <div id="quarto" class="destaque" destaque="2">#quarto</div>
+    <div id="quinto" class="ultimo">#quinto</div>
+
+    <script>
+        function selecionarTodos(seletor) {
+            return document.querySelectorAll(seletor)
+        }
+
+        selecionarTodos('#primeiro').forEach(el => console.log(el))
+        console.log(selecionarTodos('.primeiro').length)
+        console.log( selecionarTodos('.primeiro').item(0))
+
+        selecionarTodos('[metade]').forEach(el => {
+            console.log(el)
+        })
+    </script>
+</body>
+</html>

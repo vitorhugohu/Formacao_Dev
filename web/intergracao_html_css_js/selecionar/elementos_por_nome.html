@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionar por Nome</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body id="exercicio">
+    <main class="coluna">
+        <h1> Pesquisa no Google</h1>
+        <form name="formGoogle" action="https://www.google.com.br/search" class="coluna">
+        <!-- q=Linuz -->
+         <input type="text" name="q" placeholder="Digite o termo para pesquisar">
+        <!-- hl=pt-BR -->
+         <select name="hl">
+            <option value="pt-br">Português (Brasil)</option>
+            <option value="en-us">Inglês (EUA)</option>
+         </select>
+         <button>Pesquisar</button>
+    </form>
+</main>
+    
+
+    <script>
+        const campoConsulta = document.getElementsByName('q')[0]
+        campoConsulta.value = 'Linux Ubuntu'
+
+        console.log(document.formGoogle.hl)
+
+        document.formGoogle.hl.value = 'en-us'
+    </script>
+</body>
+</html>

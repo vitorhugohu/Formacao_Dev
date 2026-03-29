@@ -1,0 +1,42 @@
+useState - Usando quando você precisa guardar um valor que MUDA e atualiza a tela. Quando tiver uma variável e eu preciso que troque de valor na tela.
+
+useRef - Usado para manipular a DOM no REACT
+
+useEffect - Usado quando você precisa executar efeitos colaterais (coisas fora da renderização).
+
+O useEffect vai ser chamado em umas dessas situações:
+
+1) Qualquer estado for alterado
+
+2) Quando um estado determinado for alterado
+
+3) Quando a tela carregar
+
+useContext -> Usado para disponibilizar funções e variáveis para vários componentes diferentes.]
+
+useMemo -> Usado para aumentar o desempenho em aplicações com cálculos complexos usando a técnica computacional memoizacao. Sempre retorna o mesmo valor, caso os parâmetros sejam o mesmo. Ele executa uma função e guarda o resultado.
+
+** Memoizacao -> É uma técnica computacional para aumentar o desempenho das aplicações quando
+temos cálculos muitos complexos(cálculos que demoram muito para ser executados)
+
+useCallback -> Usado para aumentar o desempenho em aplicações com cálculos complexos usando a técnica computacional memoizacao. Ele guarda a própria função para não recriar ela a cada render.
+
+** Ambos usam a sintaxe do useEffect
+
+useImperativeHandle -> Utilizado em conjunto com o hook useRef. Ele permite fazer alteração a nossa referência em um componente filho.
+
+useLayoutEffect -> É um hook que roda de forma síncrona logo após o React fazer as alterações no DOM, mas antes do navegador pintar a tela. É a mesma coisa do useEffect porém o useEffect faz as alterações no Dom depois que a tela já foi pintada, já ele antes da tela ser pintada. Ele é usado para ler ou modificar o layout do DOM sem causar flicker (piscar na tela)
+
+useReducer -> É um hook do React usado para gerenciar estados mais complexos, principalmente quando:
+
+- o estado tem vários valores
+
+- uma ação altera várias partes do estado
+
+- a lógica de atualização é grande
+
+- você quer algo parecido com o Redux, mas local
+
+Faz a mesma coisa que o useState
+
+useId -> É um hook, é usado para gerar ids únicos para os nossos componentes.

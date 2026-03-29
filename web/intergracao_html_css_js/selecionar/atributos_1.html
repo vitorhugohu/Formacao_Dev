@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos #01</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body id="exercicio">
+    <div>
+        <a href="https://www.cod3r.com.br">Cod3r</a>
+    </div>
+
+    <div id="logo">
+        <img src="http://files.cod3r.com.br/curso-web/logo-estreita.png" alt="logo">
+    </div>
+
+    <script>
+        const img = document.querySelector('img')
+        console.log('src #1', img.getAttribute('src'))
+        console.log('src #2', img.src)
+        console.log('src #3', img['src'])
+        console.log('alt', img.alt)
+
+        const link = document.querySelector('a')
+        console.log('href', link.href)
+        link.innerHTML = 'Novo Site da Cod3r'
+    </script>
+</body>
+</html>

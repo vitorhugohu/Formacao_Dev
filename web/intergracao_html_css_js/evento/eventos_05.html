@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos #5</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body id="exercicio">
+    <main class="coluna">
+        <h1>Formulário</h1>
+
+        <form class="coluna">
+            <input type="text" name="q" placeholder="Digite o termo...">
+            <select name="hl">
+                <option value="pt-br">Português (Brasil)</option>
+                <option value="en-us">Inglês (Americano)</option>
+            </select>
+            <button web-submit>Pesquisar</button>
+        </form>
+    </main>
+
+    <script>
+        function submeter(evento) {
+            evento.preventDefault()
+
+            const formulario = evento.target
+            const dados = new FormData(formulario)
+            dados.append('seguro', true)
+
+            for (const dado of dados) {
+                console.log(dado)
+            }
+
+            window.location.href =
+                `https://www.google.com/search?q=${encodeURIComponent(dados.get('q'))}&hl=${dados.get('hl')}`
+    }
+
+   const formulario = document.forms[0]
+   formulario.onsubmit = submeter
+</script>
+</body>
+</html>

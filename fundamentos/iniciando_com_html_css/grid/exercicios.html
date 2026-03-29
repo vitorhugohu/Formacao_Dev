@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercícios de CSS Grid</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: black;
+        font-family: "Oswald", sans-serif;
+        color: white;
+        max-width: 800px;
+        margin: 50px auto;
+      }
+
+      h1 {
+        font-weight: bold;
+        background-color: gray;
+        border-bottom: solid 4px lightskyblue;
+        padding: 10px;
+        text-align: center;
+        margin: 0 0 20px 0;
+      }
+
+      ul {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+      }
+
+      a:hover {
+        background-color: lightgray;
+      }
+
+      .navegacao {
+        display: flex;
+        gap: 4px;
+      }
+
+      .navegacao > ul {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exercícios CSS Grid</h1>
+
+    <div class="navegacao">
+      <ul>
+        <li>
+          <a href="./basico_1.html">Linhas e Colunas</a>
+        </li>
+        <li>
+          <a href="./span_1.html">Span #01</a>
+        </li>
+        <li>
+          <a href="./span_2.html">Span #02</a>
+        </li>
+        <li>
+          <a href="./span_3.html">Span #03</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="./span_4.html">Span #04</a>
+        </li>
+        <li>
+          <a href="./espacos.html">Espaços</a>
+        </li>
+        <li>
+          <a href="./areas.html">Áreas</a>
+        </li>
+        <li>
+          <a href="./areas_responsivas.html">Áreas Responsivas</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

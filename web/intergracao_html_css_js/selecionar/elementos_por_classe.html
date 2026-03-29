@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos por Classe</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body id="exercicio">
+    <div id="primeiro">#primeiros</div>
+    <div id="segundo" class="destaque">segundo</div>
+    <div id="terceiro">#terceiro</div>
+    <div id="quarto" class="destaque">#quarto</div>
+    <div id="quinto" class="ultimo">#quinto</div>
+
+    <script>
+        // HTMLCollection
+        const destaques = document.getElementsByClassName('destaque')
+        destaques[1].classList.remove('destaque')
+
+        const ultimos = document.getElementsByClassName('ultimo')
+        ultimos[0].classList.add('destaque')
+    </script>
+</body>
+</html>

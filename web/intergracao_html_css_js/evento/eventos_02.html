@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos #02</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body id="exercicio">
+    <div>
+        <a esperar="6" href="http://google.com.br">Google</a>
+
+    </div>
+
+    <div>
+        <a esperar="3" href="http://yahoo.com.br">Yahoo</a>
+    </div>
+    
+    <script>
+        function navegarComEspera(evento) {
+            evento.preventDefault()
+
+            const link = evento.target
+            const segundos = +link.getAttribute('esperar')
+
+            setTimeout(() => {  
+                window.location.href = link.href
+            }, segundos * 1000)
+        }
+
+        const linksPraEsperar = document.querySelectorAll('a[esperar]')
+        linksPraEsperar.forEach(link => link.onclick = navegarComEspera)
+    </script>
+</body>
+</html>

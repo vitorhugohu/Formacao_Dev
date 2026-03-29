@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body id="exercicio">
+    <main class="coluna">
+        <p>Paragrafo #01</p>
+
+        <article>
+            <p>Paragrafo #02</p>
+        </article>
+
+        <p>Paragrafo #03</p>
+
+        <article>
+            <p>Paragrafo #04</p>
+        </article>
+
+        <article>
+            <p>Paragrafo #05</p>
+        </article>
+    </main>
+
+    <script>
+        // Os parágrafos que estão fora da targ <article>
+        // 1. Adicionar o texto [Fora] no início do conteúdo
+        // 2. Adicionem a classe destaque
+
+        //const paragrafos = Array.from(document.querySelectorAll('p'))
+        //const paragrafosEmArtigos = Array.from(document.querySelectorAll('article p'))
+        //const paragrafosForaArtigos = paragrafos.filter(p => !paragrafosEmArtigos.includes(p))
+        
+        //paragrafosForaArtigos.forEach(p =>  p.textContent = `[Fora] ${p.textContent}`)
+        
+        document.querySelectorAll(':not(article) > p').forEach(p => {
+            p.classList.add('destaque')
+             p.textContent = `[Fora] ${p.textContent}`
+        })
+
+    </script>
+</body>
+</html>

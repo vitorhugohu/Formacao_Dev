@@ -1,0 +1,37 @@
+pwd -> em qual diretório eu estou
+
+ls -> lista todos os arquivos ou pastas aonde estou
+
+mkdir + nome -> criar um novo diretório
+
+ls -l -> lista todos os arquivos ou pastas, com mais informações, por exemplo, data, hora...
+
+ls -a -> lista todos os arquivos ou pastas ocultos
+. -> diretório atual
+
+.. -> diretório anterior
+
+cd + nome-> acesso um diretório 
+
+cd .. -> entro em um diretório anterior
+
+rm -r + nome -> exclui tudo do meu diretorio
+
+rmdir + nome -> exclui um diretório
+
+clear -> limpa o terminal
+
+cp + pasta atual + pasta que quero mover -> Ex: cp -r ./teste/ .. -> Logo ele vai mover tudo da pasta teste, inclusive ela para a pasta anterior à ela. O -r serve para pegar todos os arquivos de dentro de uma pasta que não esta vazia
+
+mv + ./pasta atual/arquivo/ + pasta que quero que receba esse arquivo -> Move um arquivo de dentro de uma pasta para outra pasta
+
+mv + nome do arquivo ou pasta/ + nome que quero colocar -> Renomeia um arquivo ou pasta
+
+touch + nome do arquivo-> cria um arquivo
+
+cat + nome do arquivo -> ler um arquivo
+
+rm + nome do arquivo -> exclui um arquivo
+
+
+

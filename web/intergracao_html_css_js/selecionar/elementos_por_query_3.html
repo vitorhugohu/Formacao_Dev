@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos por Query #03</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body id="exercicio">
+    <main>
+        <section>
+            <p>Lista de Aprovados...</p>
+            <ul>
+                <li>Ana</li>
+                <li>Rafaela</li>
+                <li>Gustavo</li>
+                <li>Pedro</li>
+            </ul>
+            <p>Lista de Reprovados...</p>
+                <li>Vitor</li>
+                <li>Ana</li>
+                <li>Davi</li>
+        </section>
+    </main>
+
+    <script>
+        const primeiros = document.querySelectorAll('main > section > ul > li:nth-child(1)')
+        primeiros.forEach(no => no.textContent += ' <<<<')
+
+        const itens = document.querySelectorAll('main > section li')
+        const ultimoItem = itens[itens.length - 1]
+        console.log(ultimoItem)
+    </script>
+</body>
+</html>
